@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureAuth Pro | Enterprise Authentication System</title>
+    <meta name="description" content="Advanced secure authentication system with enterprise-level security features, real-time validation, and comprehensive protection against cyber threats.">
+    <link rel="stylesheet" href="css/landing.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🛡️</span>
+                <span class="logo-text">SecureAuth Pro</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#security" class="nav-link">Security</a>
+                <a href="#demo" class="nav-link">Demo</a>
+                <a href="auth.php" class="nav-btn">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">⚡</span>
+                    <span class="badge-text">Practice 13 - Advanced Security Implementation</span>
+                </div>
+                <h1 class="hero-title">
+                    Enterprise-Grade 
+                    <span class="title-highlight">Authentication System</span>
+                </h1>
+                <p class="hero-description">
+                    Built with advanced security features including password hashing, CSRF protection, 
+                    SQL injection prevention, and real-time validation. Experience military-grade security 
+                    for your applications.
+                </p>
+                <div class="hero-cta">
+                    <a href="auth.php" class="cta-primary">
+                        <span class="cta-text">Try Demo</span>
+                        <span class="cta-icon">🚀</span>
+                    </a>
+                    <a href="#features" class="cta-secondary">
+                        <span class="cta-text">Learn More</span>
+                        <span class="cta-icon">📖</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Secure</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Security Layers</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">0</div>
+                        <div class="stat-label">Vulnerabilities</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="security-shield">
+                    <div class="shield-ring ring-1"></div>
+                    <div class="shield-ring ring-2"></div>
+                    <div class="shield-ring ring-3"></div>
+                    <div class="shield-center">
+                        <span class="shield-icon">🛡️</span>
+                    </div>
+                    <div class="security-badges">
+                        <div class="floating-badge badge-1">🔒 Encrypted</div>
+                        <div class="floating-badge badge-2">🛡️ Protected</div>
+                        <div class="floating-badge badge-3">⚡ Fast</div>
+                        <div class="floating-badge badge-4">🔐 Secure</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Advanced Security Features</h2>
+                <p class="section-description">
+                    Built with enterprise-level security standards and modern web technologies
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔐</div>
+                    <h3 class="feature-title">Password Hashing</h3>
+                    <p class="feature-description">
+                        Secure password storage using PHP's password_hash() with bcrypt algorithm. 
+                        Passwords are never stored in plain text.
+                    </p>
+                    <div class="feature-tech">PHP • Bcrypt • Salt</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3 class="feature-title">CSRF Protection</h3>
+                    <p class="feature-description">
+                        Cross-Site Request Forgery protection using secure tokens. 
+                        All forms are protected against malicious requests.
+                    </p>
+                    <div class="feature-tech">Tokens • Validation • Security</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚫</div>
+                    <h3 class="feature-title">SQL Injection Prevention</h3>
+                    <p class="feature-description">
+                        Prepared statements and parameterized queries prevent SQL injection attacks. 
+                        Database operations are 100% secure.
+                    </p>
+                    <div class="feature-tech">PDO • Prepared Statements</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3 class="feature-title">Real-time Validation</h3>
+                    <p class="feature-description">
+                        Client and server-side validation with AJAX. 
+                        Instant feedback improves user experience.
+                    </p>
+                    <div class="feature-tech">JavaScript • AJAX • PHP</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3 class="feature-title">Account Lockout</h3>
+                    <p class="feature-description">
+                        Automatic account lockout after failed login attempts. 
+                        Protects against brute force attacks.
+                    </p>
+                    <div class="feature-tech">Attempt Tracking • Timeout</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3 class="feature-title">CAPTCHA Protection</h3>
+                    <p class="feature-description">
+                        Bot protection with visual CAPTCHA challenges. 
+                        Prevents automated attacks and spam.
+                    </p>
+                    <div class="feature-tech">Bot Prevention • Challenge</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Standards Section -->
+    <section id="security" class="security-standards">
+        <div class="container">
+            <div class="security-content">
+                <div class="security-text">
+                    <h2 class="section-title">Military-Grade Security Standards</h2>
+                    <p class="section-description">
+                        Our authentication system follows industry best practices and security standards 
+                        used by Fortune 500 companies and government agencies.
+                    </p>
+                    <div class="security-list">
+                        <div class="security-item">
+                            <div class="security-icon">✅</div>
+                            <div class="security-details">
+                                <h4>Input Sanitization</h4>
+                                <p>All user inputs are properly sanitized and validated</p>
+                            </div>
+                        </div>
+                        <div class="security-item">
+                            <div class="security-icon">✅</div>
+                            <div class="security-details">
+                                <h4>Session Management</h4>
+                                <p>Secure session handling with regeneration and timeout</p>
+                            </div>
+                        </div>
+                        <div class="security-item">
+                            <div class="security-icon">✅</div>
+                            <div class="security-details">
+                                <h4>Error Handling</h4>
+                                <p>Comprehensive error handling without information leakage</p>
+                            </div>
+                        </div>
+                        <div class="security-item">
+                            <div class="security-icon">✅</div>
+                            <div class="security-details">
+                                <h4>Data Encryption</h4>
+                                <p>All sensitive data is encrypted at rest and in transit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="security-visual">
+                    <div class="security-matrix">
+                        <div class="matrix-layer layer-1"></div>
+                        <div class="matrix-layer layer-2"></div>
+                        <div class="matrix-layer layer-3"></div>
+                        <div class="security-locks">
+                            <div class="lock-item">🔐</div>
+                            <div class="lock-item">🛡️</div>
+                            <div class="lock-item">🔒</div>
+                            <div class="lock-item">⚡</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="demo-section">
+        <div class="container">
+            <div class="demo-content">
+                <h2 class="section-title">Ready to Experience SecureAuth?</h2>
+                <p class="section-description">
+                    Try our authentication system with all security features enabled. 
+                    Create an account or login to see the advanced security in action.
+                </p>
+                <div class="demo-features">
+                    <div class="demo-feature">
+                        <span class="demo-icon">🔐</span>
+                        <span class="demo-text">Secure Registration</span>
+                    </div>
+                    <div class="demo-feature">
+                        <span class="demo-icon">🔑</span>
+                        <span class="demo-text">Protected Login</span>
+                    </div>
+                    <div class="demo-feature">
+                        <span class="demo-icon">📊</span>
+                        <span class="demo-text">User Dashboard</span>
+                    </div>
+                    <div class="demo-feature">
+                        <span class="demo-icon">⚙️</span>
+                        <span class="demo-text">Security Settings</span>
+                    </div>
+                </div>
+                <div class="demo-cta">
+                    <a href="auth.php" class="demo-btn">
+                        <span class="btn-text">Launch Demo</span>
+                        <span class="btn-icon">🚀</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Stack Section -->
+    <section class="tech-stack">
+        <div class="container">
+            <div class="tech-content">
+                <h2 class="section-title">Built with Modern Technologies</h2>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <div class="tech-icon">🐘</div>
+                        <div class="tech-name">PHP 8+</div>
+                        <div class="tech-desc">Server-side logic</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">🗄️</div>
+                        <div class="tech-name">MySQL</div>
+                        <div class="tech-desc">Database storage</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">⚡</div>
+                        <div class="tech-name">JavaScript</div>
+                        <div class="tech-desc">Client interaction</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">🎨</div>
+                        <div class="tech-name">CSS3</div>
+                        <div class="tech-desc">Modern styling</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">🔄</div>
+                        <div class="tech-name">AJAX</div>
+                        <div class="tech-desc">Async requests</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">🛡️</div>
+                        <div class="tech-name">Security</div>
+                        <div class="tech-desc">Enterprise-grade</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <div class="footer-logo">
+                            <span class="logo-icon">🛡️</span>
+                            <span class="logo-text">SecureAuth Pro</span>
+                        </div>
+                        <p class="footer-description">
+                            Enterprise-grade authentication system demonstrating advanced security practices 
+                            and modern web development techniques.
+                        </p>
+                    </div>
+                    <div class="footer-links">
+                        <div class="link-group">
+                            <h4 class="link-title">Features</h4>
+                            <a href="#" class="footer-link">Password Security</a>
+                            <a href="#" class="footer-link">CSRF Protection</a>
+                            <a href="#" class="footer-link">SQL Prevention</a>
+                            <a href="#" class="footer-link">Real-time Validation</a>
+                        </div>
+                        <div class="link-group">
+                            <h4 class="link-title">Security</h4>
+                            <a href="#" class="footer-link">Encryption</a>
+                            <a href="#" class="footer-link">Authentication</a>
+                            <a href="#" class="footer-link">Account Protection</a>
+                            <a href="#" class="footer-link">CAPTCHA</a>
+                        </div>
+                        <div class="link-group">
+                            <h4 class="link-title">Demo</h4>
+                            <a href="auth.php" class="footer-link">Try Demo</a>
+                            <a href="dashboard.php" class="footer-link">Dashboard</a>
+                            <a href="profile.php" class="footer-link">Profile</a>
+                            <a href="security.php" class="footer-link">Settings</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-copyright">
+                        <p>© 2025 SecureAuth Pro - Practice 13. Built with advanced security standards.</p>
+                    </div>
+                    <div class="footer-tech">
+                        <span class="tech-badge">PHP</span>
+                        <span class="tech-badge">MySQL</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">Security</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/landing.js"></script>
+</body>
+</html>

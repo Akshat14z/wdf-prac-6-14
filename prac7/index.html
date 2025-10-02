@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure PHP Authentication System - Dhrumil's Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/landing.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="landing-page">
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-shield-alt"></i>
+                <span>SecureAuth</span>
+            </div>
+            <div class="nav-links">
+                <a href="https://github.com/dhrumil246/portfolio" target="_blank">
+                    <i class="fab fa-github"></i> Portfolio
+                </a>
+                <a href="#demo" class="nav-link">Live Demo</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#tech-stack" class="nav-link">Tech Stack</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Secure PHP Authentication System</h1>
+                <p class="hero-subtitle">
+                    A comprehensive login/logout system with advanced session management, 
+                    cookie handling, and modern security practices.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Enterprise Security</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-cookie-bite"></i>
+                        <span>Cookie Management</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-user-lock"></i>
+                        <span>Session Control</span>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <a href="login.php" class="btn btn-primary">
+                        <i class="fas fa-sign-in-alt"></i> Try Demo
+                    </a>
+                    <a href="register.php" class="btn btn-secondary">
+                        <i class="fas fa-user-plus"></i> Create Account
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="security-badge">
+                    <i class="fas fa-lock"></i>
+                    <span>100% Secure</span>
+                </div>
+                <div class="demo-preview">
+                    <div class="browser-frame">
+                        <div class="browser-header">
+                            <div class="browser-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="browser-url">localhost/secure-auth</div>
+                        </div>
+                        <div class="browser-content">
+                            <div class="login-preview">
+                                <div class="form-preview">
+                                    <div class="input-line"></div>
+                                    <div class="input-line short"></div>
+                                    <div class="button-preview"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="demo-section">
+        <div class="container">
+            <h2>🚀 Live Demo Access</h2>
+            <div class="demo-grid">
+                <div class="demo-card">
+                    <div class="demo-icon">
+                        <i class="fas fa-sign-in-alt"></i>
+                    </div>
+                    <h3>Login System</h3>
+                    <p>Test the secure authentication with session management</p>
+                    <div class="demo-credentials">
+                        <strong>Test Credentials:</strong><br>
+                        Username: <code>testuser</code><br>
+                        Password: <code>password</code>
+                    </div>
+                    <a href="login.php" class="demo-btn">
+                        <i class="fas fa-external-link-alt"></i> Try Login
+                    </a>
+                </div>
+                
+                <div class="demo-card">
+                    <div class="demo-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <h3>Registration</h3>
+                    <p>Create a new account with secure password hashing</p>
+                    <div class="demo-features">
+                        <span class="feature-tag">✓ Password Validation</span>
+                        <span class="feature-tag">✓ Email Verification</span>
+                        <span class="feature-tag">✓ BCrypt Hashing</span>
+                    </div>
+                    <a href="register.php" class="demo-btn">
+                        <i class="fas fa-external-link-alt"></i> Try Register
+                    </a>
+                </div>
+                
+                <div class="demo-card">
+                    <div class="demo-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Dashboard</h3>
+                    <p>Protected area with session information and controls</p>
+                    <div class="demo-note">
+                        <i class="fas fa-info-circle"></i>
+                        Requires authentication to access
+                    </div>
+                    <a href="dashboard.php" class="demo-btn">
+                        <i class="fas fa-external-link-alt"></i> View Dashboard
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <h2>🔐 Security Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Secure Sessions</h3>
+                    <ul>
+                        <li>HTTP-only cookies</li>
+                        <li>Secure flag for HTTPS</li>
+                        <li>SameSite protection</li>
+                        <li>Session regeneration</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cookie-bite"></i>
+                    </div>
+                    <h3>Cookie Management</h3>
+                    <ul>
+                        <li>Remember me functionality</li>
+                        <li>Encrypted tokens</li>
+                        <li>Auto-cleanup on logout</li>
+                        <li>Secure attributes</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>User Security</h3>
+                    <ul>
+                        <li>BCrypt password hashing</li>
+                        <li>Brute force protection</li>
+                        <li>Input sanitization</li>
+                        <li>CSRF prevention</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Modern Design</h3>
+                    <ul>
+                        <li>Responsive layout</li>
+                        <li>Clean UI/UX</li>
+                        <li>Cross-browser support</li>
+                        <li>Accessibility features</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech-stack" class="tech-section">
+        <div class="container">
+            <h2>⚡ Technology Stack</h2>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <i class="fab fa-php"></i>
+                    <span>PHP 7.4+</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-database"></i>
+                    <span>MySQL</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-html5"></i>
+                    <span>HTML5</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-css3-alt"></i>
+                    <span>CSS3</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-js"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-server"></i>
+                    <span>Apache</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Code Preview Section -->
+    <section class="code-section">
+        <div class="container">
+            <h2>💻 Code Preview</h2>
+            <div class="code-tabs">
+                <button class="tab-button active" data-tab="php">PHP Authentication</button>
+                <button class="tab-button" data-tab="session">Session Management</button>
+                <button class="tab-button" data-tab="security">Security Features</button>
+            </div>
+            
+            <div class="code-content">
+                <div class="tab-panel active" id="php">
+                    <pre><code class="language-php">// Secure user authentication
+public function authenticate($username, $password) {
+    $query = "SELECT id, username, password FROM users 
+              WHERE username = :username LIMIT 1";
+    
+    $stmt = $this->conn->prepare($query);
+    $stmt->bindParam(':username', $username);
+    $stmt->execute();
+    
+    if ($stmt->rowCount() > 0) {
+        $user = $stmt->fetch(PDO::FETCH_ASSOC);
+        
+        if (password_verify($password, $user['password'])) {
+            return $user;
+        }
+    }
+    
+    return false;
+}</code></pre>
+                </div>
+                
+                <div class="tab-panel" id="session">
+                    <pre><code class="language-php">// Secure session configuration
+public static function startSecureSession() {
+    ini_set('session.cookie_httponly', 1);
+    ini_set('session.use_only_cookies', 1);
+    ini_set('session.cookie_secure', 1);
+    ini_set('session.cookie_samesite', 'Strict');
+    
+    session_set_cookie_params([
+        'lifetime' => 0,
+        'path' => '/',
+        'secure' => true,
+        'httponly' => true,
+        'samesite' => 'Strict'
+    ]);
+    
+    session_start();
+}</code></pre>
+                </div>
+                
+                <div class="tab-panel" id="security">
+                    <pre><code class="language-php">// Brute force protection
+public static function checkBruteForce($username, $maxAttempts = 5) {
+    $query = "SELECT COUNT(*) as attempts FROM login_attempts 
+              WHERE username = :username 
+              AND success = FALSE 
+              AND created_at > DATE_SUB(NOW(), INTERVAL 15 MINUTE)";
+    
+    // Check if attempts exceed limit
+    return $result['attempts'] >= $maxAttempts;
+}</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Dhrumil</h3>
+                    <p>Full Stack Developer</p>
+                    <div class="social-links">
+                        <a href="https://github.com/dhrumil246" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://github.com/dhrumil246/portfolio" target="_blank">
+                            <i class="fas fa-briefcase"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="login.php">Login Demo</a></li>
+                        <li><a href="register.php">Register Demo</a></li>
+                        <li><a href="session_info.php">Session Info</a></li>
+                        <li><a href="https://github.com/dhrumil246/portfolio" target="_blank">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-tech">
+                    <h4>Built With</h4>
+                    <div class="tech-badges">
+                        <span class="tech-badge">PHP</span>
+                        <span class="tech-badge">MySQL</span>
+                        <span class="tech-badge">Security</span>
+                        <span class="tech-badge">Sessions</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Built for educational purposes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for interactions -->
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+# Basic .htaccess
+RewriteEngine On
+
+# Basic security headers
+Header always set X-Content-Type-Options nosniff
+Header always set X-Frame-Options DENY
+
+# PHP settings
+php_value display_errors Off
+php_value log_errors On
